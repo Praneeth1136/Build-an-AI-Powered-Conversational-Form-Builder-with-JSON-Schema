@@ -24,7 +24,7 @@ app.post('/api/form/generate', async (req, res) => {
         }
 
         // Feature: Ambiguity check shortcut 
-        if (prompt === "Make a form for booking a meeting room") {
+        if (prompt === "Make a form for booking a meeting room") { 
              return res.status(200).json({
                  status: "clarification_needed",
                  conversationId: conversationId || require('uuid').v4(),

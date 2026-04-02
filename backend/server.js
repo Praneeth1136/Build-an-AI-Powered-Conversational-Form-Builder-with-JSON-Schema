@@ -15,7 +15,7 @@ app.get('/health', (req, res) => {
 });
 
 // Main generate endpoint
-app.post('/api/form/generate', async (req, res) => {
+app.post('/api/form/generate', async (req, res) => { 
     try {
         const { prompt, conversationId } = req.body;
         
